@@ -1,21 +1,21 @@
-# Como instalar
+#Como instalar
 
 Baixe o script do painel ao lado como chmod-xcli e dê permissão de execução:
 sudo install -m 0755 chmod-xcli /usr/local/bin/chmod-xcli
 
 (Opcional) Instale a TUI:
-# Debian/Ubuntu
+#Debian/Ubuntu
 sudo apt-get update && sudo apt-get install -y whiptail  
 ou
 sudo apt-get install dialog
-# (Opcional) clipboard para copiar: xclip ou wl-clipboard
+#(Opcional) clipboard para copiar: xclip ou wl-clipboard
 sudo apt-get install -y xclip
 
-# Uso rápido (CLI)
+#Uso rápido (CLI)
 Abre TUI (se whiptail/dialog estiver instalado)
 chmod-xcli
 
-Adicionar execução para o dono nos .sh e aplicar
+#Adicionar execução para o dono nos .sh e aplicar
 chmod-xcli --op + --classes u --perms x --apply -- *.sh
 
 Definir 755 recursivo em um diretório e copiar o comando
